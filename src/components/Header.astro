@@ -1,0 +1,41 @@
+<header>
+    <div class="container">
+        <div class="header__container">
+            <a href="#">🚀🚀🚀</a>
+            <ul class="header__list">
+                <li class="header__list-item">
+                    <a href="#">1asdf</a>
+                </li>
+                <li class="header__list-item">
+                    <a href="#">2asdf</a>
+                </li>
+                <li class="header__list-item">
+                    <a href="#">3asdf</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</header>
+
+<style lang="scss">
+    .header {
+        &__container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        &__list {
+            display: flex;
+            align-items: center;
+        }
+
+        &__list-item {
+            list-style: none;
+        }
+
+        &__list-item:not(:first-child) {
+            margin-left: 20px;
+        }
+    }
+</style>
