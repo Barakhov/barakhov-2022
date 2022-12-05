@@ -7,7 +7,7 @@ const data = await response.json();
 
 <div class="ram-grid">
     {data.results.map( el => {
-        return <li class="ram-grid__item">
+        return  <li class="ram-grid__item">
                     <h4 class="ram-grid__title">{el.name}</h4>
                     <img class="ram-grid__img" src={el.image}/>
                 </li>    
