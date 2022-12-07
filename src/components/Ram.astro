@@ -23,6 +23,15 @@ const data = await response.json();
         &__item {
             position: relative;
             list-style: none;
+
+            will-change: auto;
+            opacity: 0;
+            transform: translateY(8%) scale(0.9);
+            animation: showCard 0.4s ease-in-out forwards;
+        }
+
+        @for $i from 1 to 20 {
+            &__item:nth-child(#{$i}) { animation-delay: $i * 0.05s; }
         }
 
         &__title {
@@ -41,6 +50,17 @@ const data = await response.json();
             width: 100%;
             height: 100%;
             object-fit: cover;
+        }
+    }
+
+    @keyframes showCard {
+        0% {
+            opacity: 0;
+            transform: translateY(8%) scale(0.9);
+        }
+        100% {
+            opacity: 1;
+            transform: translateY(0%) scale(1);
         }
     }
 

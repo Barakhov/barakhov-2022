@@ -1,16 +1,16 @@
 <header class="header">
     <div class="container">
         <div class="header__container">
-            <a href="#">Rick & Morty 🛸</a>
+            <a class="header__logo" href="/">Alex Barakhov</a>
             <ul class="header__list">
                 <li class="header__list-item">
-                    <a href="#">Work</a>
+                    <a href="/work/">Work</a>
                 </li>
                 <li class="header__list-item">
-                    <a href="#">About</a>
+                    <a href="/about/">About</a>
                 </li>
                 <li class="header__list-item">
-                    <a href="#">Contact</a>
+                    <a href="#contact">Contact</a>
                 </li>
             </ul>
         </div>
@@ -27,6 +27,11 @@
             justify-content: space-between;
         }
 
+        &__logo {
+            font-weight: 600;
+            text-decoration: none;
+        }
+
         &__list {
             display: flex;
             align-items: center;
@@ -34,6 +39,7 @@
 
         &__list-item {
             list-style: none;
+            font-weight: 600;
         }
 
         &__list-item:not(:first-child) {

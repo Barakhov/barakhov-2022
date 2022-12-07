@@ -2,20 +2,23 @@
     <div class="container">
         <div class="footer__container">
             <h3>
-                Title
+                <a href="/">
+                    Alex Barakhov
+                </a>
+                
             </h3>
             <ul class="footer__list">
                 <li class="footer__list-item">
-                    <a class="footer__list-link" href="#">Uno</a>
+                    <a class="footer__list-link" href="#">LinkedIn</a>
                 </li>
                 <li class="footer__list-item">
-                    <a class="footer__list-link" href="#">Dos</a>
+                    <a class="footer__list-link" href="#">GitHub</a>
                 </li>
                 <li class="footer__list-item">
-                    <a class="footer__list-link" href="#">Tre</a>
+                    <a class="footer__list-link" href="#">Twitter</a>
                 </li>
                 <li class="footer__list-item">
-                    <a class="footer__list-link" href="#">Cua</a>
+                    <a class="footer__list-link" href="#">©2022</a>
                 </li>                                                
             </ul>
         </div>
@@ -30,12 +33,19 @@
 
         &__list {
             margin: 0;
+            padding: 0;    
+            display: flex;
+
         }
 
         &__list-item {
-            list-style: none;            
-            a {
-                color: white;
+            list-style: none;     
+            
+            &:not(:last-child) {
+                margin-right: 24px;
+            }
+            &:last-child {
+                margin-left: auto;
             }
         }
     }
